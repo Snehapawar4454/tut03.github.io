@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+
+            height: 180vh;
+            width: 100vw;
+            background-color: yellow;
+        }
+
+        .box{
+
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            /* position: absolute; */
+        }
+
+
+        #box1{
+
+            height: 100px;
+            width: 100px;
+            color: black;
+            z-index: 1000;
+
+            /* transform: rotate(30deg); */
+            /* rotate: 180deg; */
+            /* border-radius : 50%; */
+
+            /* transform: translate(-40rem); */
+            /* transform: translateY(30rem); */
+            /* transform: scale(1); */
+            /* transform: skew(-50deg); */
+
+            /* border-top-left-radius: 10rem;
+            border-bottom-right-radius: 10rem; */
+            transition: all ease 1s;
+            opacity: 1;
+        }
+
+
+        #box1:hover ,#box2:hover{
+
+
+            background-color: red;
+            rotate: 20deg;
+
+
+        }
+
+
+
+
+        .box:last-child{
+
+            background-color: aquamarine;
+
+        }
+       
+
+      
+
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div class="box" id="box1">
+            box1
+        </div>
+        <div class="box" id="box2">
+            box2
+        </div>
+        <div class="box" id="box3">
+            box3
+        </div>
+        <div class="box" id="box4">
+            box4
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
